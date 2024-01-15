@@ -1,0 +1,117 @@
+body {
+	background-color: #eab676;
+	font-family: 'Courier New', Courier, monospace !important;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+}
+
+.boton-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 250px;
+	margin-top: 20px;
+}
+.login-btn{
+	position: absolute; 
+	bottom: 10px; 
+	left: 50%; 
+	transform: translateX(-50%);
+}
+.boton {
+	background-color: #873e23;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px 2px;
+	cursor: pointer;
+	border-radius: 15px;
+}
+.close-btn {
+	position: absolute ;
+	right: 10px;
+	top: 10px;
+	background-color: #873e23;
+	color: #ffffff;
+	border: none;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.logo {
+	width: 200px;
+	height: 200px;
+}
+
+.dialog {
+	font-family: 'Courier New', Courier, monospace;
+	color: #225E23;
+	background-color: #eab676;
+	border-radius: 15px;
+	padding: 20px;
+	margin: 50px;
+}
+.information{
+	float: left;
+}
+.login {
+	display: flex;
+	width: auto;
+	height: 300px;
+	transform: translate(-50%, -50%) scale(0.1);
+	background-color: #e28743;
+	border-radius: 15px;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+}
+.open-login{
+	visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.hash-modal{
+	height: auto !important;
+}
+@media screen and (max-width: 768px) {
+	.content {
+		height: 50vh;
+	}
+
+	.btn-group {
+		width: 100%;
+		flex-direction: column;
+	}
+}
+.hash-button{
+	display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.center-items{
+	align-items: center;
+}
+.accommodate{
+	height: 250px !important;
+}
+.boton-margin{
+	margin-top:15px !important;
+}
